@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="190.0" stylesheets="@../../../Navigation1/src/navigation1/navigate.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="111.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/navi.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="b1" accessibleText="Red" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="190.0" stylesheets="@../../../Navigation1/src/navigation1/navigate.css" text="RED" translateX="-70.0">
+         <VBox.margin>
+            <Insets left="70.0" top="40.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton fx:id="b11" accessibleText="Blue" layoutX="80.0" layoutY="157.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="190.0" stylesheets="@../../../Navigation1/src/navigation1/navigate.css" text="BLUE" />
+      <JFXButton fx:id="b111" accessibleText="Yellow" layoutX="10.0" layoutY="197.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="190.0" stylesheets="@../../../Navigation1/src/navigation1/navigate.css" text="YELLOW" />
+      <JFXButton fx:id="b1111" accessibleText="Logout" layoutX="10.0" layoutY="237.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="190.0" stylesheets="@../../../Navigation1/src/navigation1/navigate.css" text="LOGOUT" />
+   </children>
+</VBox>

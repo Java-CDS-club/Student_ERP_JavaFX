@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="778.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studenter.AttendanceController">
+   <stylesheets>
+      <URL value="@scrollp.css" />
+   </stylesheets>
+   <children>
+      <VBox prefHeight="779.0" prefWidth="305.0" style="-fx-background-color: #2272c6; -fx-background-radius: 0 60 0 0;">
+         <children>
+            <JFXButton onAction="#home" prefHeight="31.0" prefWidth="307.0" text="HOME" textFill="WHITE" translateY="150.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" onAction="#personalinfo" prefHeight="31.0" prefWidth="307.0" text="PERSONAL INFO" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@personal.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" onAction="#changePassword" prefHeight="31.0" prefWidth="307.0" text="CHANGE PASSWORD" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@password.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" onAction="#fees" prefHeight="31.0" prefWidth="307.0" text="FEES" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fees.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" onAction="#classinfo" prefHeight="31.0" prefWidth="307.0" text="CLASS INFO" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@class.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" onAction="#logout" prefHeight="31.0" prefWidth="307.0" text="LOGOUT" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sign_out_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="329.0" layoutY="59.0" style="-fx-font-size: 25 px;" text="ATTENDANCE" AnchorPane.bottomAnchor="684.0" AnchorPane.topAnchor="59.0" />
+      <ImageView fitHeight="599.0" fitWidth="665.0" layoutX="484.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+         <image>
+            <Image url="@coming.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

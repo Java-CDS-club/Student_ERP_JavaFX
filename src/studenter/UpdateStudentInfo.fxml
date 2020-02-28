@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studenter.UpdateStudentInfoController">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="779.0" prefWidth="305.0" style="-fx-background-color: #2262C6; -fx-background-radius: 0 60 0 0;">
+         <children>
+            <JFXButton alignment="CENTER" maxWidth="1.7976931348623157E308" onAction="#home" prefHeight="31.0" prefWidth="450.0" text="HOME" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="450.0" text="UPDATE INFO" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@personal.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="450.0" text="CHANGE PASSWORD" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@password.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="41.0" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="450.0" text="Add Student" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/add-stu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="72.0" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="450.0" text="Add Notes" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/adds.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="103.0" maxWidth="1.7976931348623157E308" onAction="#logout" prefHeight="31.0" prefWidth="450.0" text="LOGOUT" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox layoutX="313.0" layoutY="92.0" prefHeight="382.0" prefWidth="775.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px;">
+         <children>
+            <Label text="GENDER" textFill="#7c7c7c" translateX="10.0" translateY="260.0" />
+         </children>
+      </HBox>
+      <Label layoutX="313.0" layoutY="55.0" text="UPDATE INFO">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="14.0" text="Profile" translateX="10.0" translateY="90.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="4.0" text="NAME" textFill="#7c7c7c" translateY="150.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="325.0" layoutY="4.0" text="BIRTHDAY" textFill="#7c7c7c" translateY="210.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="325.0" layoutY="14.0" text="ENROLLMENT ID" textFill="#7c7c7c" translateY="160.0" />
+      <Label layoutX="325.0" layoutY="14.0" text="SEMESTER" textFill="#7c7c7c" translateY="400.0" />
+      <TextField fx:id="t1" layoutX="550.0" layoutY="54.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="110.0" />
+      <TextField fx:id="t5" layoutX="550.0" layoutY="68.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="340.0" />
+      <TextField fx:id="t4" layoutX="550.0" layoutY="68.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="270.0" />
+      <TextField fx:id="t3" layoutX="550.0" layoutY="280.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="t2" layoutX="550.0" layoutY="64.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="155.0" />
+      <HBox layoutX="313.0" layoutY="486.0" prefHeight="217.0" prefWidth="775.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px;" />
+      <Label layoutX="325.0" layoutY="24.0" text="Contact Info" translateY="470.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="26.0" text="EMAIL" textFill="#7c7c7c" translateY="520.0" />
+      <Label layoutX="325.0" layoutY="14.0" text="PHONE" textFill="#7c7c7c" translateY="600.0" />
+      <TextField fx:id="t7" layoutX="550.0" layoutY="54.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="550.0" />
+      <TextField fx:id="t6" layoutX="542.0" layoutY="55.0" prefHeight="31.0" prefWidth="317.0" style="-fx-background-color: transparent;" translateY="480.0" />
+      <HBox layoutX="658.0" layoutY="54.0" prefHeight="31.0" prefWidth="296.0" style="-fx-border-radius: 10px; -fx-border-color: #a9a9a9;">
+         <children>
+            <FontAwesomeIconView glyphName="SEARCH" scaleX="1.2" scaleY="1.2" translateX="10.0" wrappingWidth="15.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <TextField fx:id="search" onAction="#search" prefHeight="31.0" prefWidth="263.0" promptText="Enter Enrollment" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <JFXButton buttonType="RAISED" layoutX="626.0" layoutY="721.0" onAction="#update" style="-fx-background-radius: 5px; -fx-background-color: #0080ff;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

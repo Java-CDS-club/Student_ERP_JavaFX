@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="778.0" prefWidth="1100.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studenter.AdminResultController">
+   <stylesheets>
+      <URL value="@scrollp.css" />
+   </stylesheets>
+   <children>
+      <VBox prefHeight="779.0" prefWidth="305.0" style="-fx-background-color: #2272c6; -fx-background-radius: 0 60 0 0;">
+         <children>
+            <JFXButton prefHeight="31.0" prefWidth="307.0" text="HOME" textFill="WHITE" translateY="150.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" prefHeight="31.0" prefWidth="307.0" text="PERSONAL INFO" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@personal.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" prefHeight="31.0" prefWidth="307.0" text="CHANGE PASSWORD" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@password.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" prefHeight="31.0" prefWidth="307.0" text="FEES" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fees.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" prefHeight="31.0" prefWidth="307.0" text="CLASS INFO" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@class.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="10.0" prefHeight="31.0" prefWidth="307.0" text="LOGOUT" textFill="WHITE" translateY="150.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sign_out_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="329.0" layoutY="59.0" style="-fx-font-size: 25 px;" text="UPDATE RESULTS" AnchorPane.bottomAnchor="684.0" AnchorPane.topAnchor="59.0" />
+      <ChoiceBox fx:id="Select" layoutX="329.0" layoutY="130.0" prefHeight="36.0" prefWidth="238.0" />
+      <VBox layoutX="322.0" layoutY="229.0" prefHeight="473.0" prefWidth="252.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="265.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px; -fx-background-color: #38B0DE; -fx-background-radius: 10px; -fx-font-size: 20px;" text="Subject" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="s1" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="OOP">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="s2" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="ADA">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="s3" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Web Development">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="s4" layoutX="11.0" layoutY="88.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Discrete Structure">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="s5" layoutX="11.0" layoutY="123.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="PYTHON">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="580.0" layoutY="229.0" prefHeight="473.0" prefWidth="252.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="265.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px; -fx-background-color: #38B0DE; -fx-background-radius: 10px; -fx-font-size: 20px;" text="Total Marks" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="l11" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="20">
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="l12" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="20">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l13" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="20">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l14" layoutX="11.0" layoutY="88.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="20">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l15" layoutX="11.0" layoutY="123.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="20">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="839.0" layoutY="229.0" prefHeight="473.0" prefWidth="254.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px;">
+         <children>
+            <Label alignment="CENTER" prefHeight="42.0" prefWidth="265.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 10px; -fx-background-color: #38B0DE; -fx-background-radius: 10px; -fx-font-size: 20px;" text="Obtained Marks" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="l1" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="label">
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="l2" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l3" layoutX="16.0" layoutY="53.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l4" layoutX="11.0" layoutY="88.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="l5" layoutX="11.0" layoutY="123.0" prefHeight="35.0" prefWidth="259.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #a9a9a9;" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="name" layoutX="329.0" layoutY="187.0" prefHeight="21.0" prefWidth="230.0" text="Label" />
+      <JFXButton buttonType="RAISED" layoutX="657.0" layoutY="722.0" style="-fx-background-radius: 5px; -fx-background-color: #0080ff;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="637.0" layoutY="130.0" prefHeight="31.0" prefWidth="296.0" style="-fx-border-radius: 10px; -fx-border-color: #a9a9a9;">
+         <children>
+            <FontAwesomeIconView glyphName="SEARCH" scaleX="1.2" scaleY="1.2" translateX="10.0" wrappingWidth="15.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <TextField fx:id="search" onAction="#searches" prefHeight="31.0" prefWidth="263.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
